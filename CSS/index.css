@@ -26,10 +26,20 @@ body {
 a {
     text-decoration: none;
 }
+
+a:link {
+    color: white;
+}
+
+a:visited {
+    color: white;
+}
+
 .nav-bar {
     width: 93vw;
     height: 100px;
-    background-color: rgb(241, 241, 241);
+    background: rgb(229,50,130);
+    background: linear-gradient(90deg, rgba(229,50,130,1) 0%, rgba(245,222,214,1) 30%, rgba(163,190,216,1) 56%, rgba(24,57,141,1) 100%);
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -46,8 +56,10 @@ a {
     border-radius: 15px;
 
     box-shadow: -2px 1px 57px -7px rgba(0,0,0,0.46);
--webkit-box-shadow: -2px 1px 57px -7px rgba(0,0,0,0.46);
--moz-box-shadow: -2px 1px 57px -7px rgba(0,0,0,0.46);
+    -webkit-box-shadow: -2px 1px 57px -7px rgba(0,0,0,0.46);
+    -moz-box-shadow: -2px 1px 57px -7px rgba(0,0,0,0.46);
+
+    z-index: 1;
 }
 
 .left-side {
@@ -93,4 +105,238 @@ a {
 .right-side a:nth-child(2):hover {
     border-bottom: solid 3px #999348;
 }
-/*--------------------Navigation Bar----------------------*/
+/*--------------------End of Navigation Bar----------------------*/
+/*-------------------------MAIN CONTENT--------------------------*/
+main{
+    height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+.card-groups,
+.card-group,
+.card {
+    aspect-ratio: 5/7;
+}
+
+.card-groups,
+.card-group,
+.big-card{
+    width: 30vmin;
+}
+
+.card-group {
+    position: absolute;
+    transition: transform 400ms ease;
+}
+
+.card-group[data-status="unknown"] {
+    transform: scale(0);
+}
+
+.card-group[data-status="after"] {
+    transform: translateX(50%) scale(0);
+}
+
+.card-group[data-status="becoming-active-from-before"] {
+    transform: translateX(-50%) scale(0);
+    transition: none;
+}
+
+.card-group[data-status="before"] {
+    transform: translateX(-50%) scale(0);
+}
+
+.card-group[data-status="becoming-active-from-after"] {
+    transform: translateX(50%) scale(0);
+    transition: none;
+}
+
+.card-group[data-status="active"] {
+    transition-delay: 300ms;
+}
+
+.card {
+    position: absolute;
+    transition: transform 800ms cubic-bezier(.05, .43, .25, .95);
+}
+
+.big-card {
+    width: 30vmin;
+    border-radius: 1vmin;
+    box-shadow: -12px 10px 31px -6px rgba(0,0,0,0.53);
+    -webkit-box-shadow: -12px 10px 31px -6px rgba(0,0,0,0.53);
+    -moz-box-shadow: -12px 10px 31px -6px rgba(0,0,0,0.53);
+}
+
+.little-card {
+    width: 12vmin;
+    border-radius: 1vmin;
+    left: 50%;
+    top: 55%;
+    transform: translate(-50%, -50%);
+}
+
+.big-card:nth-child(2) {
+    background-image: url("../Assets/Images/iphone.png");
+    background-position: 50%;
+    background-size: cover;
+    transform: translateX(-10%) rotate(-1deg);
+}
+
+.big-card:nth-child(4) {
+    background-image: url(../Assets/Images/2ip13.jfif);
+    background-position: 50%;
+    background-size: cover;
+    transform: rotate(2deg);
+}
+
+.big-card:nth-child(6) {
+    background-image: url(../Assets/Images/ip14.jfif);
+    background-size: cover;
+    transform: rotate(2deg);
+}
+
+.big-card:nth-child(8) {
+    background-image: url(../Assets/Images/ip13.jfif);
+    background-position: 50%;
+    background-size: cover;
+    transform: translate(10%, 3%) rotate(5deg);
+}
+
+.little-card:nth-child(1) {
+    background-image: url("../Assets/Images/airpods.jfif");
+    background-position: 50%;
+    background-size: cover;
+}
+
+.little-card:nth-child(3) {
+    background-image: url("../Assets/Images/cardcase.png");
+    background-position: 50%;
+    background-size: cover;
+}
+
+.little-card:nth-child(5) {
+    background-image: url("../Assets/Images/ipcase.png");
+    background-position: 50%;
+    background-size: cover;
+}
+
+.little-card:nth-child(7) {
+    background-image: url("../Assets/Images/idk.png");
+    background-position: 50%;
+    background-size: cover;
+}
+
+.card-group[data-index="1"] > .big-card:nth-child(2) {
+    background-image: url("../Assets/Images/ipad.jfif");
+    background-position: 50%;
+    background-size: cover;
+}
+
+.card-group[data-index="1"] > .big-card:nth-child(4) {
+    background-image: url("../Assets/Images/ipad\ 2.jfif");
+    background-position: 50%;
+    background-size: cover;
+}
+
+.card-group[data-index="1"] > .big-card:nth-child(6) {
+    background-image: url("../Assets/Images/ipad\ 3.jfif");
+    background-position: 50%;
+    background-size: cover;
+}
+
+.card-group[data-index="1"] > .big-card:nth-child(8) {
+    background-image: url("../Assets/Images/ipad\ 4.jfif");
+    background-position: 50%;
+    background-size: cover;
+}
+
+.card-group[data-index="1"] > .little-card:nth-child(1) {
+    background-image: url("../Assets/Images/ipad\ png.png");
+}
+
+.card-group[data-index="1"] > .little-card:nth-child(3) {
+    background-image: none;
+}
+
+.card-group[data-index="1"] > .little-card:nth-child(5) {
+    background-image: none;
+}
+
+.card-group[data-index="1"] > .little-card:nth-child(7) {
+    background-image: url("../Assets/Images/ipad\ 2\ png.png");
+}
+
+.card-group[data-index="2"] > .big-card:nth-child(2) {
+    background-image: url("../Assets/Images/iamc.jfif");
+    background-position: 50%;
+    background-size: cover;
+}
+
+.card-group[data-index="2"] > .big-card:nth-child(4) {
+    background-image: url("../Assets/Images/macbook.jfif");
+    background-position: 50%;
+    background-size: cover;
+}
+
+.card-group[data-index="2"] > .big-card:nth-child(6) {
+    background-image: url("../Assets/Images/macbook\ 2.jfif");
+    background-position: 50%;
+    background-size: cover;
+}
+
+.card-group[data-index="2"] > .big-card:nth-child(8) {
+    background-image: url("../Assets/Images/imac\ 2.jpg");
+    background-position: 50%;
+    background-size: cover;
+}
+
+.card-group:hover > .big-card:nth-child(2) {
+    transform: translate(-75%, 16%) rotate(-24deg);
+}
+
+.card-group:hover > .big-card:nth-child(4) {
+    transform: translate(-25%, 8%) rotate(-8deg);
+}
+
+.card-group:hover > .big-card:nth-child(6) {
+    transform: translate(25%, 8%) rotate(8deg);
+}
+
+.card-group:hover > .big-card:nth-child(6) {
+    transform: translate(75%, 16%) rotate(24deg);
+}
+
+.card-group:hover > .little-card:nth-child(1) {
+    transform: translate(200%, -160%) rotate(-15deg);
+}
+
+.card-group:hover > .little-card:nth-child(3) {
+    transform: translate(160%, 170%) rotate(15deg);
+}
+
+.card-group:hover > .little-card:nth-child(5) {
+    transform: translate(-200%, -170%) rotate(15deg);
+}
+
+.card-group:hover > .little-card:nth-child(7) {
+    transform: translate(-280%, 140%) rotate(-15deg);
+}
+
+.card-swiper-buttons {
+    margin-top: 8vmin;
+    display: flex;
+    justify-content: space-around;
+}
+
+.card-swiper-buttons > button {
+    height: 7vmin;
+    width: 7vmin;
+
+    border-radius: 50%;
+
+    cursor: pointer;
+
+    font-size: 20px;
+}
