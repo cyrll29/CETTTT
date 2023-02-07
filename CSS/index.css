@@ -1,0 +1,96 @@
+:root{
+    font-size: 16px;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    html {
+        scroll-behavior: smooth;
+    }
+}
+
+*,
+*::before,
+*::after,
+html {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    padding: 50px;
+}
+
+/*--------------------Navigation Bar----------------------*/
+a {
+    text-decoration: none;
+}
+.nav-bar {
+    width: 93vw;
+    height: 100px;
+    background-color: rgb(241, 241, 241);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 70px;
+    padding-right: 70px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    align-items: center;
+    position: fixed;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    border-radius: 15px;
+
+    box-shadow: -2px 1px 57px -7px rgba(0,0,0,0.46);
+-webkit-box-shadow: -2px 1px 57px -7px rgba(0,0,0,0.46);
+-moz-box-shadow: -2px 1px 57px -7px rgba(0,0,0,0.46);
+}
+
+.left-side {
+    display: flex;
+    width: 250px;
+    justify-content: space-evenly;
+}
+
+.left-side:hover{
+    cursor: pointer;
+}
+
+.left-side a {
+    font-size: 2rem;
+}
+
+.apple-logo {
+    width: 14%;
+    height: 14%;
+}
+
+.right-side {
+    display: flex;
+    width: 400px;
+    justify-content: space-evenly;
+}
+
+.right-side a:nth-child(2) {
+    padding-left: 35px;
+    padding-right: 35px;
+    border-left: solid 2px;
+    border-right: solid 2px;
+}
+
+.right-side a:nth-child(1) {
+    transition: border-bottom 0.2s ease-in-out;
+}
+
+.right-side a:nth-child(1):hover {
+    border-bottom: solid 3px #2f5d8c;
+}
+
+.right-side a:nth-child(2):hover {
+    border-bottom: solid 3px #999348;
+}
+/*--------------------Navigation Bar----------------------*/
