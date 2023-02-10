@@ -459,4 +459,76 @@ main{
         top: -3.6em;
     }
 }
-  
+/*-------------------------END OF MAIN HEADING--------------------------*/
+
+/*-------------------------FOOTER--------------------------*/
+.footer-container {
+    display: grid;
+    grid-template-rows: 50% 50%;
+    width: 100vw;
+    height: 20em
+}
+
+.upper-footer {
+    background-color: black;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.lower-footer {
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.left-lower-footer {
+    width: 20%;
+    height: 90%;
+    text-align: center;
+    color: white;
+    font-size: 30px;
+}
+
+.middle-lower-footer {
+    width: 20%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.middle-lower-footer p:nth-child(1) {
+    font-size: 40px;
+}
+
+.right-lower-footer {
+    width: 20%;
+    height: 90%;
+    text-align: center;
+    color: white;
+    font-size: 30px;
+}
+
+.brand-logo {
+    font-size: 4rem;
+    color: white;
+}
+
+.bi-facebook:hover {
+    color: #3b5998 ;
+    cursor: pointer;
+}
+
+.bi-twitter:hover {
+    color: #00acee;
+    cursor: pointer;
+}
+
+.bi-instagram:hover {
+    color: #d62976;
+    cursor: pointer;
+}
