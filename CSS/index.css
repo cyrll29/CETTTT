@@ -19,9 +19,21 @@ html {
 }
 
 body {
-    padding: 50px;
+    padding-top: 50px;
 }
 
+::-webkit-scrollbar {
+    width: 7px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: lightgray;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: gray;
+    border-radius: 7px;
+}
 /*--------------------Navigation Bar----------------------*/
 a {
     text-decoration: none;
@@ -50,7 +62,7 @@ a:visited {
     align-items: center;
     position: fixed;
 
-    margin-left: auto;
+    margin-left: 50px;
     margin-right: auto;
 
     border-radius: 15px;
@@ -59,7 +71,7 @@ a:visited {
     -webkit-box-shadow: -2px 1px 57px -7px rgba(0,0,0,0.46);
     -moz-box-shadow: -2px 1px 57px -7px rgba(0,0,0,0.46);
 
-    z-index: 1;
+    z-index: 99;
 }
 
 .left-side {
@@ -339,4 +351,184 @@ main{
     cursor: pointer;
 
     font-size: 20px;
+}
+/*-------------------------MAIN CONTENT--------------------------*/
+/*-------------------------MAIN HEADING--------------------------*/
+.main-heading {
+    padding: 20px;
+    margin-left: 180px;
+    margin-right: 180px;
+
+    border-top: solid 5px;
+}
+.main-header {
+    font-size: 60px;
+    font-weight: bolder;
+}
+.main-heading a {
+    font-weight: bold;
+    color: #2f5d8c;
+}
+
+.main-heading a:hover {
+    text-decoration: underline;
+}
+
+.header-text {
+    font-size: 40px;
+}
+
+.image-slider{
+    display: block;
+    height: 80vh;
+}
+
+.side {
+    width: 100%;
+    height: 80vh;
+    color: lightgray;
+
+    display: grid;
+    place-items: center;
+
+    overflow: hidden;
+    position: absolute;
+}
+
+.side .title {
+    color: black;
+    font-size: 6vw;
+    margin: 0px 15vw;
+    width: 70vw;
+}
+
+#right-side .title{
+    color: white;
+    font-size: 6vw;
+    margin: 0px 15vw;
+    width: 70vw;
+    text-align: right;
+}
+
+#left-side {
+    background-image: url(../Assets/Images/iphone\ 14\ pro.jpg);
+    background-size: cover;
+    z-index: 2;
+}
+
+#right-side {
+    background-image: url(../Assets/Images/iphone\ 14\ pro\ max.jpg);
+    background-size: cover;
+}
+
+.wrapper {
+    padding: 100px;
+    width: 80vw;
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+}
+  
+.roles {
+    position: relative;
+    font-size: 30px;
+    height: 1.2em;
+    vertical-align: middle;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.roles > p {
+    position: absolute;
+    top: 0;
+    animation: slide 5s infinite;
+    left: 37%;
+}
+
+@keyframes slide {
+    0% {
+        top: 0;
+    }
+    25% {
+        top: -1.2em;
+    }
+    50% {
+        top: -2.4em;
+    }
+    75% {
+        top: -3.6em;
+    }
+}
+/*-------------------------END OF MAIN HEADING--------------------------*/
+
+/*-------------------------FOOTER--------------------------*/
+.footer-container {
+    display: grid;
+    grid-template-rows: 50% 50%;
+    width: 100vw;
+    height: 20em
+}
+
+.upper-footer {
+    background-color: black;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.lower-footer {
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.left-lower-footer {
+    width: 20%;
+    height: 90%;
+    text-align: center;
+    color: white;
+    font-size: 30px;
+}
+
+.middle-lower-footer {
+    width: 20%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.middle-lower-footer p:nth-child(1) {
+    font-size: 40px;
+}
+
+.right-lower-footer {
+    width: 20%;
+    height: 90%;
+    text-align: center;
+    color: white;
+    font-size: 30px;
+}
+
+.brand-logo {
+    font-size: 4rem;
+    color: white;
+}
+
+.bi-facebook:hover {
+    color: #3b5998 ;
+    cursor: pointer;
+}
+
+.bi-twitter:hover {
+    color: #00acee;
+    cursor: pointer;
+}
+
+.bi-instagram:hover {
+    color: #d62976;
+    cursor: pointer;
 }
