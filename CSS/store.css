@@ -1,0 +1,256 @@
+:root{
+    font-size: 16px;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    html {
+        scroll-behavior: smooth;
+    }
+}
+
+*,
+*::before,
+*::after,
+html {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    padding-top: 50px;
+}
+
+::-webkit-scrollbar {
+    width: 7px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: lightgray;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: gray;
+    border-radius: 7px;
+}
+/*--------------------Navigation Bar----------------------*/
+a {
+    text-decoration: none;
+}
+
+a:link {
+    color: white;
+}
+
+a:visited {
+    color: white;
+}
+
+.nav-bar {
+    width: 93vw;
+    height: 100px;
+    background: rgb(229,50,130);
+    background: linear-gradient(90deg, rgba(229,50,130,1) 0%, rgba(245,222,214,1) 30%, rgba(163,190,216,1) 56%, rgba(24,57,141,1) 100%);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 70px;
+    padding-right: 70px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    align-items: center;
+    position: fixed;
+
+    margin-left: 50px;
+    margin-right: auto;
+
+    border-radius: 15px;
+
+    box-shadow: -2px 1px 57px -7px rgba(0,0,0,0.46);
+    -webkit-box-shadow: -2px 1px 57px -7px rgba(0,0,0,0.46);
+    -moz-box-shadow: -2px 1px 57px -7px rgba(0,0,0,0.46);
+
+    z-index: 99;
+}
+
+.left-side {
+    display: flex;
+    width: 250px;
+    justify-content: space-evenly;
+}
+
+.left-side:hover{
+    cursor: pointer;
+}
+
+.left-side a {
+    font-size: 2rem;
+}
+
+.apple-logo {
+    width: 14%;
+    height: 14%;
+}
+
+.right-side {
+    display: flex;
+    width: 400px;
+    justify-content: space-evenly;
+}
+
+.right-side a:nth-child(2) {
+    padding-left: 35px;
+    padding-right: 35px;
+    border-left: solid 2px;
+    border-right: solid 2px;
+}
+
+.right-side a:nth-child(1) {
+    transition: border-bottom 0.2s ease-in-out;
+}
+
+.right-side a:nth-child(1):hover {
+    border-bottom: solid 3px #2f5d8c;
+}
+
+.right-side a:nth-child(2):hover {
+    border-bottom: solid 3px #999348;
+}
+/*--------------------End of Navigation Bar----------------------*/
+main{
+    height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+.list_iphone {
+    width: 99vw;
+    height: 100vh;
+    position: absolute;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: large;
+}
+
+.card_iphone {
+    width: 19%;
+    height: 60%;
+    background-color: white;
+    box-shadow: 2px 2px 4px #00000050;
+    border-radius: 5%;
+    display: flex;
+    align-items: center;
+    animation: fadein_float .5s;
+    transition: .5s;
+}
+
+.card_iphone:hover {
+    transform: scale(1.05);
+}
+
+.card_iphone img {
+    width: 100%;
+    height: auto;
+    transform: .5s;
+    box-shadow: none;
+}
+
+.card_iphone table {
+    width: 100%;
+    height: 95%;
+    text-align: left;
+    margin: 5%;
+}
+
+.card_iphone #img_iphone {
+    text-align: center;
+}
+
+.card_iphone #price_buy_h {
+    text-align: center;
+    height: auto;
+    padding-top: 5%;
+    width: 20%;
+    background-color: #0077ed;
+    border-radius: 5px;
+}
+
+.card_iphone #btn_buy {
+    /*background-color: #0077ed;*/
+    width: 100%;
+    height: 100%;
+}
+
+/*-------------------------FOOTER--------------------------*/
+.footer-container {
+    display: grid;
+    grid-template-rows: 50% 50%;
+    width: 100vw;
+    height: 20em
+}
+
+.upper-footer {
+    background-color: black;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.lower-footer {
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.left-lower-footer {
+    width: 20%;
+    height: 90%;
+    text-align: center;
+    color: white;
+    font-size: 30px;
+}
+
+.middle-lower-footer {
+    width: 20%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.middle-lower-footer p:nth-child(1) {
+    font-size: 40px;
+}
+
+.right-lower-footer {
+    width: 20%;
+    height: 90%;
+    text-align: center;
+    color: white;
+    font-size: 30px;
+}
+
+.brand-logo {
+    font-size: 4rem;
+    color: white;
+}
+
+.bi-facebook:hover {
+    color: #3b5998 ;
+    cursor: pointer;
+}
+
+.bi-twitter:hover {
+    color: #00acee;
+    cursor: pointer;
+}
+
+.bi-instagram:hover {
+    color: #d62976;
+    cursor: pointer;
+}
