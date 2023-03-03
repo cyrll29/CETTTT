@@ -1,0 +1,442 @@
+﻿a {
+    text-decoration: none;
+}
+
+    a:link {
+        color: white;
+    }
+
+    a:visited {
+        color: white;
+    }
+
+.nav-bar {
+    width: 93vw;
+    height: 100px;
+    background: rgb(229,50,130);
+    background: linear-gradient(90deg, rgba(229,50,130,1) 0%, rgba(245,222,214,1) 30%, rgba(163,190,216,1) 56%, rgba(24,57,141,1) 100%);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 70px;
+    padding-right: 70px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    align-items: center;
+    position: fixed;
+    margin-left: 50px;
+    margin-right: auto;
+    border-radius: 15px;
+    box-shadow: -2px 1px 57px -7px rgba(0,0,0,0.46);
+    -webkit-box-shadow: -2px 1px 57px -7px rgba(0,0,0,0.46);
+    -moz-box-shadow: -2px 1px 57px -7px rgba(0,0,0,0.46);
+    z-index: 99;
+}
+
+.left-side {
+    display: flex;
+    width: 250px;
+    justify-content: space-evenly;
+}
+
+    .left-side:hover {
+        cursor: pointer;
+    }
+
+    .left-side a {
+        font-size: 2rem;
+    }
+
+.apple-logo {
+    width: 14%;
+    height: 14%;
+}
+
+.right-side {
+    display: flex;
+    width: 400px;
+    justify-content: space-evenly;
+}
+
+    .right-side a:nth-child(2) {
+        padding-left: 35px;
+        padding-right: 35px;
+        border-left: solid 2px;
+        border-right: solid 2px;
+    }
+
+    .right-side a:nth-child(1) {
+        transition: border-bottom 0.2s ease-in-out;
+    }
+
+        .right-side a:nth-child(1):hover {
+            border-bottom: solid 3px #2f5d8c;
+        }
+
+    .right-side a:nth-child(2):hover {
+        border-bottom: solid 3px #999348;
+    }
+
+.about {
+    width: 100%;
+    padding: 78px 0px;
+    background-color: white;
+}
+
+.about img {
+        height: 420px;
+        width: auto;
+ }
+
+.about-text {
+    width: 550px;
+}
+
+.mainA {
+    width: 1130px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.about-text h1 {
+    color: #457373;
+    font-size: 80px;
+    margin-bottom: 20px;
+    font-family: 'Inter', sans-serif;
+}
+
+.about-text h5 {
+    color: #5A6868;
+    font-size: 25px;
+    margin-bottom: 25px;
+    letter-spacing: 2px;
+    font-family: 'Inter', sans-serif;
+}
+
+span {
+    color: #DDB247;
+}
+
+.about-text p {
+    color: #CD7E59;
+    letter-spacing: 1px;
+    line-height: 28px;
+    font-size: 18px;
+    margin-bottom: 45px;
+    font-family: 'Inter', sans-serif;
+}
+
+button {
+    background: #DDB247;
+    color: #457373;
+    text-decoration: none;
+    border: 2px solid transparent;
+    padding: 13px 30px;
+    border-radius: 30px;
+    transition: .4s;
+    font-family: 'Inter', sans-serif;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background-color: white;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2em 1em;
+    text-align: center;
+}
+
+
+.column {
+    width: 100%;
+    padding: 0.5em 0;
+}
+
+.columnA {
+    width: 100%;
+    padding: 0.5em 0;
+}
+
+h1 {
+    width: 100%;
+    text-align: center;
+    font-size: 3.5em;
+    color: #457373;
+}
+
+h2 {
+    width: 100%;
+    text-align: center;
+    font-size: 3.5em;
+    color: #DDB247;
+}
+
+h4{
+    width: 100%;
+    text-align: center;
+    font-size: 3.5em;
+    color: #CD7E59;
+}
+
+.card {
+    box-shadow: 0 0 2.4em rgba(25, 0, 58, 0.1);
+    padding: 3.5em 1em;
+    border-radius: 0.6em;
+    color: #457373;
+    cursor: pointer;
+    transition: 0.3s;
+    background-color: #ffffff;
+}
+
+    .card .img-container {
+        width: 8em;
+        height: 8em;
+        background-color: #457373;
+        padding: 0.5em;
+        border-radius: 50%;
+        margin: 0 auto 2em auto;
+    }
+
+    .card img {
+        width: 100%;
+        border-radius: 50%;
+    }
+
+    .card h3 {
+        font-weight: 500;
+    }
+
+    .card p {
+        font-weight: 300;
+        text-transform: initial;
+        margin: 0.5em 0 2em 0;
+        letter-spacing: 2px;
+    }
+
+.icons {
+    width: 50%;
+    min-width: 180px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.card a {
+    text-decoration: none;
+    color: inherit;
+    font-size: 1.4em;
+}
+
+.card:hover {
+    background: linear-gradient(#5A6868, #457373);
+    color: #ffffff;
+}
+
+    .card:hover .img-container {
+        transform: scale(1.15);
+    }
+
+@media screen and (min-width: 768px) {
+    section {
+        padding: 1em 7em;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    section {
+        padding: 1em;
+    }
+
+    .card {
+        padding: 5em 1em;
+    }
+
+    .column {
+        flex: 0 0 33.33%;
+        max-width: 33.33%;
+        padding: 0 1em;
+    }
+
+    .column {
+        max-width: 50%;
+        padding: 0.5em 0;
+    }
+
+    .brand {
+        padding: 50px 14%;
+    }
+
+    .brand-content {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(150px, auto));
+        gap: 2rem;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .main img {
+        width: 100%;
+        height: auto;
+        opacity: 0.6;
+        transition: all .35s ease;
+        cursor: pointer;
+    }
+
+        .main img:hover {
+            opacity: 1;
+        }
+
+    .contact-section {
+        text-align: center;
+    }
+
+  
+    .contact-info span {
+        display: block;
+        text-align: center;
+    }
+
+    .contact-info div {
+        margin: 0.8rem 0;
+        padding: 1rem;
+    }
+
+    .contact-info span .fas {
+        font-size: 2rem;
+        padding-bottom: 0.9rem;
+        color: #457373;
+    }
+
+.contact-info div span:nth-child(2) {
+        font-weight: 500;
+        font-size: 1.1rem;
+    }
+
+.contact-info .text {
+        padding-top: 0.4rem;
+        text-align:center;
+    }
+
+.contact-footer {
+        padding: 2rem 0;
+        background: white;
+        text-align: center;
+        grid-column: 1/5;
+    }
+
+.contact-footer h3 {
+            font-size: 1.3rem;
+            color: #457373;
+            margin-bottom: 1rem;
+            text-align: center;
+}
+
+.social-links {
+        display:flex;
+        justify-content: center;
+}
+
+.social-links a {
+            text-decoration: none;
+            width: 40px;
+            height: 40px;
+            color: #457373;
+            border: 2px solid #457373;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0.4rem;
+            transition: all 0.4s ease;
+            text-align: center;
+}
+@media screen and (min-width: 768px){
+        .contact-info{
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+        }
+}
+    .footer-container {
+        display: grid;
+        grid-template-rows: 50% 50%;
+        width: 100vw;
+        height: 20em
+    }
+
+    .upper-footer {
+        background-color: black;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .lower-footer {
+        background-color: black;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .left-lower-footer {
+        width: 20%;
+        height: 90%;
+        text-align: center;
+        color: white;
+        font-size: 30px;
+    }
+
+    .middle-lower-footer {
+        width: 20%;
+        height: 90%;
+        display: flex;
+        flex-direction: column;
+        color: white;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+        .middle-lower-footer p:nth-child(1) {
+            font-size: 40px;
+        }
+
+    .right-lower-footer {
+        width: 20%;
+        height: 90%;
+        text-align: center;
+        color: white;
+        font-size: 30px;
+    }
+
+    .brand-logo {
+        font-size: 4rem;
+        color: white;
+    }
+
+    .bi-facebook:hover {
+        color: #3b5998;
+        cursor: pointer;
+    }
+
+    .bi-twitter:hover {
+        color: #00acee;
+        cursor: pointer;
+    }
+
+    .bi-instagram:hover {
+        color: #d62976;
+        cursor: pointer;
+    }
+}
