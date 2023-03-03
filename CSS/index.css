@@ -117,6 +117,10 @@ a:visited {
 .right-side a:nth-child(2):hover {
     border-bottom: solid 3px #999348;
 }
+
+.right-side a:nth-child(3):hover {
+    border-bottom: solid 3px #CD7E59;
+}
 /*--------------------End of Navigation Bar----------------------*/
 /*-------------------------MAIN CONTENT--------------------------*/
 main{

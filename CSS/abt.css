@@ -77,6 +77,10 @@ a {
         border-bottom: solid 3px #999348;
     }
 
+    .right-side a:nth-child(3):hover {
+        border-bottom: solid 3px #CD7E59;
+    }
+
 .about {
     width: 100%;
     padding: 78px 0px;
